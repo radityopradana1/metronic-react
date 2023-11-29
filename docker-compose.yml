@@ -1,8 +1,0 @@
-version: '3'
-services:
-  sg-billing-ihub-frontend:
-    build: .
-    ports:
-      - '5000:3000'
-    volumes:
-      - .:/app
