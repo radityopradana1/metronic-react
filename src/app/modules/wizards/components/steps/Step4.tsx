@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {FC} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../../../_metronic/helpers'
 import {Field, ErrorMessage} from 'formik'
@@ -10,8 +11,7 @@ const Step4: FC = () => {
 
         <div className='text-gray-400 fw-bold fs-6'>
           If you need more info, please check out
-          <a href='/dashboard' className='text-primary fw-bolder'>
-            {' '}
+          <a href='#' className='text-primary fw-bolder'>
             Help Page
           </a>
           .
@@ -34,7 +34,7 @@ const Step4: FC = () => {
           placeholder=''
           name='nameOnCard'
         />
-        <div className='text-danger mt-2'>
+        <div className='fv-plugins-message-container invalid-feedback'>
           <ErrorMessage name='nameOnCard' />
         </div>
       </div>
@@ -49,7 +49,7 @@ const Step4: FC = () => {
             placeholder='Enter card number'
             name='cardNumber'
           />
-          <div className='text-danger mt-2'>
+          <div className='fv-plugins-message-container invalid-feedback'>
             <ErrorMessage name='cardNumber' />
           </div>
 
@@ -90,7 +90,7 @@ const Step4: FC = () => {
                 <option value='11'>11</option>
                 <option value='12'>12</option>
               </Field>
-              <div className='text-danger mt-2'>
+              <div className='fv-plugins-message-container invalid-feedback'>
                 <ErrorMessage name='cardExpiryMonth' />
               </div>
             </div>
@@ -110,7 +110,7 @@ const Step4: FC = () => {
                 <option value='2030'>2030</option>
                 <option value='2031'>2031</option>
               </Field>
-              <div className='text-danger mt-2'>
+              <div className='fv-plugins-message-container invalid-feedback'>
                 <ErrorMessage name='cardExpiryYear' />
               </div>
             </div>
@@ -136,7 +136,7 @@ const Step4: FC = () => {
               placeholder='CVV'
               name='cardCvv'
             />
-            <div className='text-danger mt-2'>
+            <div className='fv-plugins-message-container invalid-feedback'>
               <ErrorMessage name='cardCvv' />
             </div>
 

@@ -6,7 +6,6 @@ import {
   ScrollTopComponent,
   StickyComponent,
   ToggleComponent,
-  SwapperComponent,
 } from '../assets/ts/components'
 
 import {useLayout} from './core'
@@ -23,8 +22,7 @@ export function MasterInit() {
       StickyComponent.bootstrap()
       MenuComponent.bootstrap()
       ScrollComponent.bootstrap()
-      SwapperComponent.bootstrap()
-    }, 500)
+    }, 200)
   }
 
   useEffect(() => {

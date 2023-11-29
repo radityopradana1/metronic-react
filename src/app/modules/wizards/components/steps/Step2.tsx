@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {FC} from 'react'
 import {KTSVG} from '../../../../../_metronic/helpers'
 import {Field, ErrorMessage} from 'formik'
@@ -10,7 +11,7 @@ const Step2: FC = () => {
 
         <div className='text-gray-400 fw-bold fs-6'>
           If you need more info, please check out
-          <a href='/dashboard' className='link-primary fw-bolder'>
+          <a href='#' className='link-primary fw-bolder'>
             {' '}
             Help Page
           </a>
@@ -106,8 +107,9 @@ const Step2: FC = () => {
           type='text'
           className='form-control form-control-lg form-control-solid'
           name='accountName'
+          placeholder=''
         />
-        <div className='text-danger mt-2'>
+        <div className='fv-plugins-message-container invalid-feedback'>
           <ErrorMessage name='accountName' />
         </div>
       </div>

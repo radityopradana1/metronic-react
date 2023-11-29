@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {FC} from 'react'
 import {Field, ErrorMessage} from 'formik'
 
@@ -9,8 +10,7 @@ const Step3: FC = () => {
 
         <div className='text-gray-400 fw-bold fs-6'>
           If you need more info, please check out
-          <a href='/dashboard' className='link-primary fw-bolder'>
-            {' '}
+          <a href='#' className='link-primary fw-bolder'>
             Help Page
           </a>
           .
@@ -21,7 +21,7 @@ const Step3: FC = () => {
         <label className='form-label required'>Business Name</label>
 
         <Field name='businessName' className='form-control form-control-lg form-control-solid' />
-        <div className='text-danger mt-2'>
+        <div className='fv-plugins-message-container invalid-feedback'>
           <ErrorMessage name='businessName' />
         </div>
       </div>
@@ -35,7 +35,7 @@ const Step3: FC = () => {
           name='businessDescriptor'
           className='form-control form-control-lg form-control-solid'
         />
-        <div className='text-danger mt-2'>
+        <div className='fv-plugins-message-container invalid-feedback'>
           <ErrorMessage name='businessDescriptor' />
         </div>
 
@@ -60,7 +60,7 @@ const Step3: FC = () => {
           <option value='4'>Limited Liability</option>
           <option value='5'>General Partnership</option>
         </Field>
-        <div className='text-danger mt-2'>
+        <div className='fv-plugins-message-container invalid-feedback'>
           <ErrorMessage name='businessType' />
         </div>
       </div>
@@ -80,7 +80,7 @@ const Step3: FC = () => {
         <label className='fs-6 fw-bold form-label required'>Contact Email</label>
 
         <Field name='businessEmail' className='form-control form-control-lg form-control-solid' />
-        <div className='text-danger mt-2'>
+        <div className='fv-plugins-message-container invalid-feedback'>
           <ErrorMessage name='businessEmail' />
         </div>
       </div>
